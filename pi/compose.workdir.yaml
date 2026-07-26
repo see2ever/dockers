@@ -1,0 +1,5 @@
+services:
+  pi:
+    working_dir: ${WORK_DIR}
+    volumes:
+      - ${WORK_DIR}:${WORK_DIR}

@@ -3,9 +3,8 @@ services:
     build: .
     container_name: pi
     image: pi-sandbox
-    working_dir: ${WORK_DIR}
+    working_dir: /home/node
     volumes:
-      - ${WORK_DIR}:${WORK_DIR}
       - pi-data:/home/node/.pi
 
 volumes:
