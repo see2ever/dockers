@@ -34,7 +34,8 @@ RUN pi install npm:@ff-labs/pi-fff \
   && pi install npm:pi-web-access \
   && pi install npm:@gotgenes/pi-permission-system \
   && pi install npm:pi-mcp-adapter \
-  && pi install npm:pi-mono-figma
+  && pi install npm:pi-mono-figma \
+  && pi update --extensions
 
 COPY --chown=node:node --chmod=755 entrypoint.sh /home/node/entrypoint.sh
 ENTRYPOINT ["/home/node/entrypoint.sh"]
