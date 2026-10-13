@@ -13,7 +13,7 @@ RUN apt-get update \
 RUN pip install --break-system-packages --no-cache-dir \
      pypdf pdfplumber reportlab \
      pytesseract pdf2image \
-     openpyxl
+     openpyxl python-pptx
 
 # 安装 pi 本体
 RUN npm install -g @earendil-works/pi-coding-agent@0.85.1 \
@@ -35,6 +35,7 @@ RUN pi install npm:@ff-labs/pi-fff \
   && pi install npm:@gotgenes/pi-permission-system \
   && pi install npm:pi-mcp-adapter \
   && pi install npm:pi-mono-figma \
+  && pi install npm:pi-powerpoint \
   && pi update --extensions
 
 COPY --chown=node:node --chmod=755 entrypoint.sh /home/node/entrypoint.sh
