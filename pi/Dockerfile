@@ -16,7 +16,7 @@ RUN pip install --break-system-packages --no-cache-dir \
      openpyxl python-pptx
 
 # 安装 pi 本体
-RUN npm install -g @earendil-works/pi-coding-agent@0.85.1 \
+RUN npm install -g @earendil-works/pi-coding-agent@1.3.0 \
   && corepack enable pnpm \
   && npm install -g docx \
   && npm install -g pptxgenjs

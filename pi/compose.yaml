@@ -5,7 +5,5 @@ services:
     image: pi-sandbox
     working_dir: /home/node
     volumes:
-      - pi-data:/home/node/.pi
+      - /Users/odylee/.pi:/home/node/.pi
 
-volumes:
-  pi-data:
